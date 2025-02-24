@@ -1,6 +1,6 @@
 # P1ckl3d Web Shell: A Comprehensive Guide to Advanced Web Shell for Security Testing
 
-![P1ckl3d Web Shell](https://example.com/banner.png)
+![P1ckl3d Web Shell](https://r00t-shell.com/wp-content/uploads/2025/02/P1ckl3d-Web-Shell.png)
 
 > **⚠️ Important Security Notice**
 >
@@ -29,7 +29,7 @@ In the realm of **cybersecurity** and **penetration testing**, having the right 
 ### Installation Steps
 1. **Download** the `webshell.php` file from the repository:
    ```bash
-   git clone https://github.com/your-repo/P1ckl3d-Web-Shell.git
+   git clone https://github.com/RootShelll/P1ckl3d-Web-Shell.git
    cd P1ckl3d-Web-Shell
    ```
 2. **Identify** a suitable upload point on the target system.
@@ -75,7 +75,7 @@ This tool is intended strictly for **ethical hacking and penetration testing** w
 
 ## 📫 Contact & Support
 For any queries, contributions, or issues, reach out via:
-📧 Email: security@yourdomain.com  
-💬 Discord: [Join our community](https://discord.gg/yourserver)  
-🐙 GitHub Issues: [Report a bug](https://github.com/your-repo/issues)
+📧 Email: security@R00t-shell.com  
+💬 Discord: [Join our community](https://github.com/RootShelll/)  
+🐙 GitHub Issues: [Report a bug](https://github.com/RootShelll//issues)
 
