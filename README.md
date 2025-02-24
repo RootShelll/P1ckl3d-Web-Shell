@@ -27,7 +27,7 @@ In the realm of **cybersecurity** and **penetration testing**, having the right 
 - Proper authorization to conduct security testing
 
 ### Installation Steps
-1. **Download** the `webshell.php` file from the repository:
+1. **Download** the `P1ckl3d-Web-Shell.php` file from the repository:
    ```bash
    git clone https://github.com/RootShelll/P1ckl3d-Web-Shell.git
    cd P1ckl3d-Web-Shell
